@@ -1,0 +1,11 @@
+¿Qué entiende como commit?	
+Es la idea de consignar un conjunto de cambios de forma permanente a un proyecto, dejando 
+los proyectos anteriores almacenados en nodos para que si en algun momento se desea regresar
+se pueda hacer sin ningun problema y conservando todas las versiones.
+
+¿Qué entiende como merge?
+Que se logra combinar las partes del proyecto  en uno. 
+
+¿Cuál es la diferencia entre Pull y Push?
+Que en el pull se jalan todos los commits del "repository" mientras que en el push se
+suben todos los commit del "repository".
