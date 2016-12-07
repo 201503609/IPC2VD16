@@ -25,12 +25,6 @@ namespace HojaDeTrabajo1
         {
 
         }
-        //----------------------variables a utilizar------------------------------------------
-        double a = 0;
-        double b = 0;
-        double c = 0;
-        double resultado;
-        
 
         //----------------------metodo para calcular MCD-----------------------------------------
         private void btn_mcm_Click(object sender, EventArgs e)
@@ -57,5 +51,24 @@ namespace HojaDeTrabajo1
             MCD = C;
             txt_resultado.Text = Convert.ToString(MCD);
         }
+
+        //---------------------------------------promedio-----------------------------------------
+        private void btn_promedio_Click(object sender, EventArgs e)
+        {
+            int a, b, c;
+
+            a = Int32.Parse(txt_val1.Text);
+            b = Int32.Parse(txt_val1.Text);
+            c = Int32.Parse(txt_val1.Text);
+
+            int suma;
+            suma = a + b + c;
+            double division;
+            division = suma / 3;
+
+            txt_resultado.Text = Convert.ToString(division);
+
+        }
+
     }
 }

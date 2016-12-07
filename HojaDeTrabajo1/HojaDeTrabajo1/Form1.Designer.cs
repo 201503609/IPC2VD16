@@ -37,6 +37,7 @@
             this.txt_resultado = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_mcd = new System.Windows.Forms.Button();
+            this.btn_promedio = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -108,11 +109,21 @@
             // 
             this.btn_mcd.Location = new System.Drawing.Point(290, 12);
             this.btn_mcd.Name = "btn_mcd";
-            this.btn_mcd.Size = new System.Drawing.Size(124, 46);
+            this.btn_mcd.Size = new System.Drawing.Size(124, 42);
             this.btn_mcd.TabIndex = 8;
             this.btn_mcd.Text = "MCD";
             this.btn_mcd.UseVisualStyleBackColor = true;
             this.btn_mcd.Click += new System.EventHandler(this.btn_mcm_Click);
+            // 
+            // btn_promedio
+            // 
+            this.btn_promedio.Location = new System.Drawing.Point(290, 60);
+            this.btn_promedio.Name = "btn_promedio";
+            this.btn_promedio.Size = new System.Drawing.Size(124, 43);
+            this.btn_promedio.TabIndex = 9;
+            this.btn_promedio.Text = "Promedio";
+            this.btn_promedio.UseVisualStyleBackColor = true;
+            this.btn_promedio.Click += new System.EventHandler(this.btn_promedio_Click);
             // 
             // Form1
             // 
@@ -120,6 +131,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(436, 218);
+            this.Controls.Add(this.btn_promedio);
             this.Controls.Add(this.btn_mcd);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_resultado);
@@ -148,6 +160,7 @@
         private System.Windows.Forms.TextBox txt_resultado;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_mcd;
+        private System.Windows.Forms.Button btn_promedio;
     }
 }
 
