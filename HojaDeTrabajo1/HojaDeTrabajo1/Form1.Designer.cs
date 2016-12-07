@@ -38,6 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btn_mcd = new System.Windows.Forms.Button();
             this.btn_promedio = new System.Windows.Forms.Button();
+            this.btn_formu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -125,12 +126,23 @@
             this.btn_promedio.UseVisualStyleBackColor = true;
             this.btn_promedio.Click += new System.EventHandler(this.btn_promedio_Click);
             // 
+            // btn_formu
+            // 
+            this.btn_formu.Location = new System.Drawing.Point(290, 109);
+            this.btn_formu.Name = "btn_formu";
+            this.btn_formu.Size = new System.Drawing.Size(124, 43);
+            this.btn_formu.TabIndex = 10;
+            this.btn_formu.Text = "Formula General";
+            this.btn_formu.UseVisualStyleBackColor = true;
+            this.btn_formu.Click += new System.EventHandler(this.btn_formu_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(436, 218);
+            this.Controls.Add(this.btn_formu);
             this.Controls.Add(this.btn_promedio);
             this.Controls.Add(this.btn_mcd);
             this.Controls.Add(this.label4);
@@ -161,6 +173,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_mcd;
         private System.Windows.Forms.Button btn_promedio;
+        private System.Windows.Forms.Button btn_formu;
     }
 }
 
