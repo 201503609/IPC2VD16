@@ -39,6 +39,7 @@
             this.btn_mcd = new System.Windows.Forms.Button();
             this.btn_promedio = new System.Windows.Forms.Button();
             this.btn_formu = new System.Windows.Forms.Button();
+            this.btn_mcm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -136,12 +137,23 @@
             this.btn_formu.UseVisualStyleBackColor = true;
             this.btn_formu.Click += new System.EventHandler(this.btn_formu_Click);
             // 
+            // btn_mcm
+            // 
+            this.btn_mcm.Location = new System.Drawing.Point(290, 158);
+            this.btn_mcm.Name = "btn_mcm";
+            this.btn_mcm.Size = new System.Drawing.Size(124, 43);
+            this.btn_mcm.TabIndex = 11;
+            this.btn_mcm.Text = "mcm";
+            this.btn_mcm.UseVisualStyleBackColor = true;
+            this.btn_mcm.Click += new System.EventHandler(this.btn_mcm_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(436, 218);
+            this.Controls.Add(this.btn_mcm);
             this.Controls.Add(this.btn_formu);
             this.Controls.Add(this.btn_promedio);
             this.Controls.Add(this.btn_mcd);
@@ -174,6 +186,7 @@
         private System.Windows.Forms.Button btn_mcd;
         private System.Windows.Forms.Button btn_promedio;
         private System.Windows.Forms.Button btn_formu;
+        private System.Windows.Forms.Button btn_mcm;
     }
 }
 

@@ -97,5 +97,24 @@ namespace HojaDeTrabajo1
             }
 
         }
+
+        //---------------------------------------mcm-----------------------------------------
+        private void btn_mcm_Click_1(object sender, EventArgs e)
+        {
+            int x, y, z;
+            int mayor, resultado;
+            x = Convert.ToInt32(txt_val1.Text);
+            y = Convert.ToInt32(txt_val2.Text);
+            z = Convert.ToInt32(txt_val3.Text);
+            mayor = x;
+            if (y > mayor)
+                mayor = y;
+            if (z > mayor)
+                mayor = z;
+            resultado = mayor;
+            while ((resultado % x != 0) || (resultado % y != 0) || (resultado % z != 0))
+                resultado = resultado + 1;
+            txt_resultado.Text = Convert.ToString(resultado);
+        }
     }
 }
