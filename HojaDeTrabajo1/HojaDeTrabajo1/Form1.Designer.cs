@@ -40,6 +40,7 @@
             this.btn_promedio = new System.Windows.Forms.Button();
             this.btn_formu = new System.Windows.Forms.Button();
             this.btn_mcm = new System.Windows.Forms.Button();
+            this.btn_5to = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -93,9 +94,9 @@
             // 
             // txt_resultado
             // 
-            this.txt_resultado.Location = new System.Drawing.Point(71, 185);
+            this.txt_resultado.Location = new System.Drawing.Point(4, 185);
             this.txt_resultado.Name = "txt_resultado";
-            this.txt_resultado.Size = new System.Drawing.Size(100, 22);
+            this.txt_resultado.Size = new System.Drawing.Size(320, 22);
             this.txt_resultado.TabIndex = 6;
             // 
             // label4
@@ -109,7 +110,7 @@
             // 
             // btn_mcd
             // 
-            this.btn_mcd.Location = new System.Drawing.Point(290, 12);
+            this.btn_mcd.Location = new System.Drawing.Point(348, 17);
             this.btn_mcd.Name = "btn_mcd";
             this.btn_mcd.Size = new System.Drawing.Size(124, 42);
             this.btn_mcd.TabIndex = 8;
@@ -119,7 +120,7 @@
             // 
             // btn_promedio
             // 
-            this.btn_promedio.Location = new System.Drawing.Point(290, 60);
+            this.btn_promedio.Location = new System.Drawing.Point(348, 65);
             this.btn_promedio.Name = "btn_promedio";
             this.btn_promedio.Size = new System.Drawing.Size(124, 43);
             this.btn_promedio.TabIndex = 9;
@@ -129,7 +130,7 @@
             // 
             // btn_formu
             // 
-            this.btn_formu.Location = new System.Drawing.Point(290, 109);
+            this.btn_formu.Location = new System.Drawing.Point(348, 114);
             this.btn_formu.Name = "btn_formu";
             this.btn_formu.Size = new System.Drawing.Size(124, 43);
             this.btn_formu.TabIndex = 10;
@@ -139,7 +140,7 @@
             // 
             // btn_mcm
             // 
-            this.btn_mcm.Location = new System.Drawing.Point(290, 158);
+            this.btn_mcm.Location = new System.Drawing.Point(348, 163);
             this.btn_mcm.Name = "btn_mcm";
             this.btn_mcm.Size = new System.Drawing.Size(124, 43);
             this.btn_mcm.TabIndex = 11;
@@ -147,12 +148,23 @@
             this.btn_mcm.UseVisualStyleBackColor = true;
             this.btn_mcm.Click += new System.EventHandler(this.btn_mcm_Click_1);
             // 
+            // btn_5to
+            // 
+            this.btn_5to.Location = new System.Drawing.Point(487, 16);
+            this.btn_5to.Name = "btn_5to";
+            this.btn_5to.Size = new System.Drawing.Size(124, 43);
+            this.btn_5to.TabIndex = 12;
+            this.btn_5to.Text = "5to ";
+            this.btn_5to.UseVisualStyleBackColor = true;
+            this.btn_5to.Click += new System.EventHandler(this.btn_5to_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(436, 218);
+            this.ClientSize = new System.Drawing.Size(623, 223);
+            this.Controls.Add(this.btn_5to);
             this.Controls.Add(this.btn_mcm);
             this.Controls.Add(this.btn_formu);
             this.Controls.Add(this.btn_promedio);
@@ -187,6 +199,7 @@
         private System.Windows.Forms.Button btn_promedio;
         private System.Windows.Forms.Button btn_formu;
         private System.Windows.Forms.Button btn_mcm;
+        private System.Windows.Forms.Button btn_5to;
     }
 }
 

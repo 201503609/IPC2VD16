@@ -116,5 +116,32 @@ namespace HojaDeTrabajo1
                 resultado = resultado + 1;
             txt_resultado.Text = Convert.ToString(resultado);
         }
+
+        //---------------------------------------5to commit-----------------------------------------
+        private void btn_5to_Click(object sender, EventArgs e)
+        {
+            double a = Convert.ToDouble(txt_val1.Text);
+            double b = Convert.ToDouble(txt_val2.Text);
+            double c = Convert.ToDouble(txt_val3.Text);
+            double disc = Math.Pow(b, 2) - 4 * a * c;
+            if (a != 0)
+            {
+                if (disc < 0)
+                {
+                    txt_resultado.Text = ("Tiene raices imaginarias_201503609");
+                }
+                else
+                {
+                    double x1 = (-b + Math.Sqrt(disc)) / (2 * a);
+                    double x2 = (-b - Math.Sqrt(disc)) / (2 * a);
+                    txt_resultado.Text = ("X1 = " + x1 + "_201503609 , " + " X2 = " + x2 + "_201503609");
+                }
+            }
+            else
+            {
+                txt_resultado.Text = ("El coeficiente cuadratico debe ser diferente de 0_201503609");
+            }
+
+        }
     }
 }
